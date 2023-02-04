@@ -1,4 +1,4 @@
-version: '2.1'
+version: '3.8'
 
 services:
   zookeeper:
@@ -44,7 +44,7 @@ services:
 
   conduktor-platform:
     image: conduktor/conduktor-platform:latest
-    container_name: conductor
+    container_name: conduktor
     ports:
       - "8080:8080"
     depends_on:
@@ -58,9 +58,9 @@ services:
     environment:
       CDK_IN_CONF_FILE: /opt/conduktor/platform-config.yaml
       KAFKA_BOOTSTRAP_SERVER: PLAINTEXT://kafka:19092
-      ORGANISATION_NAME: "my organisation"
-      ADMIN_EMAIL: "alex@almland.com"
-      ADMIN_PSW: "alex"
+      ORGANISATION_NAME: "default"
+      ADMIN_EMAIL: "admin@admin.com"
+      ADMIN_PSW: "admin"
 
 volumes:
   conduktor_data: {}
