@@ -59,7 +59,7 @@ services:
       CDK_IN_CONF_FILE: /opt/conduktor/platform-config.yaml
       KAFKA_BOOTSTRAP_SERVER: PLAINTEXT://kafka:19092
       ORGANISATION_NAME: "default"
-      ADMIN_EMAIL: "admin@admin.com"
+      ADMIN_EMAIL: "admin@admin.io"
       ADMIN_PSW: "admin"
 
 volumes:
