@@ -1,3 +1,7 @@
+# configuration:
+# https://docs.conduktor.io/platform/configuration/introduction
+# https://docs.conduktor.io/platform/configuration/env-variables
+
 organization:
   name: "${ORGANISATION_NAME}"
   
